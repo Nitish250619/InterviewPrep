@@ -1,0 +1,32 @@
+.result-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 30px; /* Ensure height is consistent */
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 25px;
+    transition: width 1s ease-in-out; /* Smooth transition */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
