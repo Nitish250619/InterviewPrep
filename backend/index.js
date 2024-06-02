@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Replace with your frontend URL
+    origin: "https://interview-prep-dun.vercel.app/", // Replace with your frontend URL
     credentials: true, // Allow cookies to be sent and received
   })
 );
