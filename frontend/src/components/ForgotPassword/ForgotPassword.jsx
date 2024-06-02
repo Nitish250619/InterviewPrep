@@ -9,7 +9,7 @@ function ForgotPassword() {
 
   const handleChangePassword = async () => {
     try {
-      await axios.post('http://localhost:8082/auth/change-password', { email, newPassword });
+      await axios.post('https://interview-prep-dun.vercel.app/auth/change-password', { email, newPassword });
       setMessage('Password changed successfully.');
       setNewPassword('');
     } catch (error) {

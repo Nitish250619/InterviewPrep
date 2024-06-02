@@ -29,7 +29,7 @@ export default function SignUpPage() {
     }
   
     try {
-      const response = await axios.post('http://localhost:8082/auth/register', {
+      const response = await axios.post('https://interview-prep-dun.vercel.app/auth/register', {
         email,
         password
       });

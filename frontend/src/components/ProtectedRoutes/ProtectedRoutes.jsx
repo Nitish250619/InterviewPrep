@@ -9,7 +9,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        await axios.get('http://localhost:8082/auth/protected', { withCredentials: true });
+        await axios.get('https://interview-prep-dun.vercel.app/auth/protected', { withCredentials: true });
         setIsAuthenticated(true);
       } catch (error) {
         setIsAuthenticated(false);

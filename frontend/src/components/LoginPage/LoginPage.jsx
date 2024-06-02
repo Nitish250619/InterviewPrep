@@ -28,7 +28,7 @@ export default function LoginPage() {
     event.preventDefault();
 
     try {
-      await axios.post('http://localhost:8082/auth/login', {
+      await axios.post('https://interview-prep-dun.vercel.app/auth/login', {
         email,
         password,
       }, { withCredentials: true });
